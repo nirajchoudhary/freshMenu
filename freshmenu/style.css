@@ -1,0 +1,95 @@
+body {
+	height: 100%;
+	margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#fixedDiv {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	background-color: #4B84E9;
+	color: white;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 999;
+}
+
+#mainDiv {
+	position: relative;
+	padding: 0 5%;
+}
+
+#redBorderDiv {
+	position: relative;
+	top: 40px;
+	width: 100%;
+	max-width: 1200px;
+	height: 500px;
+	border: solid 1px red;
+	padding-top: 40px;
+}
+
+.responsiveDiv {
+	position: relative;
+	background-color: #4B84E9;
+	color: white;
+	float: left;
+	margin-right: 30px;
+	width: 20%;
+	height: 35%;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.responsiveDiv:hover {
+	-webkit-transition: width 2s, height 2s;
+	transition: width 2s, height 2s;
+	transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	box-shadow: 10px 10px 5px #888888;
+	width: 22%;
+	height: 37%;
+}
+
+@media (max-width: 720px) {
+	.responsiveDiv {
+		width: 60%;
+		height: 175px;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.responsiveDiv:hover {
+		width: 62%;
+	}
+
+	#redBorderDiv {
+		height: 750px;
+	}
+}
+
+#blackBorderDiv {
+	position: fixed;
+	border: solid 1px black;
+	top: 80px;
+	right: 5%;
+	width: 20%;
+	height: 400px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#rightBottomDiv {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	background-color: #EBD1DC;
+	color: white;
+	width: 50%;
+	height: 20%;
+	text-align: center;
+	padding-top: 30px;
+}
